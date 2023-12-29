@@ -1,0 +1,292 @@
+@font-face {
+    font-family: Didact;
+    src: url(./assets/fonts/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Fjalla;
+    src: url(./assets/fonts/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: FjallaOne;
+    src: url(./assets/fonts/FjallaOne-Regular.ttf);
+}
+
+/* @keyframes beat {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header styling */
+
+.headContainer,
+.social {
+    width: 75vw;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+
+.headContainer p:first-of-type {
+    font-family: WorkSans;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+
+.headContainer p:last-of-type {
+    font-family: WorkSans;
+    font-size: 130px;
+    text-transform: uppercase;
+    font-weight: 350;
+    margin-bottom: 50px;
+}
+
+.headContainer h2 {
+    font-family: Didact;
+    font-size: 90px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.headContainer h2:last-of-type {
+    margin-bottom: 50px;
+}
+
+.headContainer img {
+    margin-bottom: 50px;
+}
+
+/* Section styling */
+
+/* Black */
+
+.orbis {
+    /* background-image: url(./assets/images/section1.jpeg); */
+    height: 100vh;
+    /* width: 100vw; */
+    /* paralax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orbisLeft {
+    /* width: 400px;
+    height: 600px; */
+    padding-top: 100px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.orbisLeft p:first-of-type {
+    font-family: WorkSans;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.orbisLeft p:nth-of-type(2) {
+    font-family: Didact;
+    font-size: 112px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.orbisLeft p:nth-of-type(3) {
+    font-family: WorkSans;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+
+.orbisLeft a {
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    font-family: Fjalla;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+#numberOne,
+#numberTwo,
+#numberThree,
+#numberFour {
+    font-family: FjallaOne;
+    font-size: 165px;
+    letter-spacing: -3.3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.1;
+    position: absolute;
+    top: 70vh;
+    left: 80vw;
+}
+
+.orbisLeft a:hover ~ #numberOne {
+    opacity: 1;
+}
+
+/* White */
+
+.rollr {
+    position: relative;
+    /* background-image: url(./assets/images/section2.png); */
+    height: 100vh;
+
+    /* paralax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rollrLeft p:first-of-type,
+.rollrLeft p:nth-of-type(2),
+.rollrLeft p:nth-of-type(3),
+.rollrLeft a,
+#numberTwo,
+#numberFour {
+    color: black;
+    text-align: left;
+}
+
+.rollrLeft a {
+    border: 1px solid black;
+}
+
+.rollrImg a:hover ~ #numberTwo {
+    opacity: 1;
+}
+
+.galitoImg a:hover ~ #numberThree {
+    opacity: 1;
+}
+.trettoImg a:hover ~ #numberFour {
+    opacity: 1;
+}
+/* Contact */
+
+.contact {
+    height: 100vh;
+    background-color: black;
+}
+
+.contact h2 {
+    color: white;
+    font-family: WorkSans;
+    font-size: 160px;
+    font-weight: 400;
+    letter-spacing: -18px;
+    /* width: 60vw;
+    margin: auto; */
+    padding-top: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contact div {
+    width: 35vw;
+    height: 28vw;
+
+    margin-top: 25vh;
+    margin-left: 50vw;
+}
+
+.contact div p:first-of-type {
+    color: white;
+    opacity: 0.5;
+    font-family: WorkSans;
+    font-size: 16px;
+    opacity: 0.3;
+    line-height: 180%;
+    letter-spacing: 0.22px;
+
+    margin-bottom: 50px;
+}
+
+.contact div a {
+    color: white;
+    font-family: workSans;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: -3.6px;
+}
+
+/* Social */
+
+.social {
+    padding: 50px;
+}
+
+.social h2 {
+    text-align: center;
+    font-family: Didact;
+    font-size: 160px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.social p {
+    font-size: 30px;
+    animation: beat 0.15s infinite alternate;
+}
+
+.orbisImg {
+    background-image: url(./assets/images/section1.jpeg);
+}
+
+.rollrImg {
+    background-image: url(./assets/images/section2.png);
+}
+.galitoImg {
+    background-image: url(./assets/images/section3.jpeg);
+}
+.trettoImg {
+    background-image: url(./assets/images/section4.png);
+}
+
+/* .heart {
+    font-size: 150px;
+    color: #e00;
+    animation: beat 2s infinite alternate;
+    transform-origin: center;
+} */
