@@ -38,6 +38,22 @@ html {
     padding: 0;
 }
 
+/* Background Image Sources */
+
+.orbisImg {
+    background-image: url(./assets/images/section1.jpeg);
+}
+
+.rollrImg {
+    background-image: url(./assets/images/section2.png);
+}
+.galitoImg {
+    background-image: url(./assets/images/section3.jpeg);
+}
+.trettoImg {
+    background-image: url(./assets/images/section4.png);
+}
+
 /* header styling */
 
 .headContainer,
@@ -88,12 +104,11 @@ html {
 .orbis {
     /* background-image: url(./assets/images/section1.jpeg); */
     min-height: 100vh;
-    /* width: 100vw; */
-    /* paralax effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* paralax effect */
+    background-attachment: fixed;
 }
 
 .orbisLeft {
@@ -158,10 +173,6 @@ html {
     left: 80vw;
 }
 
-.orbisLeft a:hover ~ #numberOne {
-    opacity: 1;
-}
-
 /* White */
 
 .rollr {
@@ -190,16 +201,27 @@ html {
     border: 1px solid black;
 }
 
-.rollrImg a:hover ~ #numberTwo {
-    opacity: 1;
+.rollrImg a {
+    transition: 1s;
+}
+.rollrImg a:hover,
+.galitoImg a:hover,
+.trettoImg a:hover,
+.orbisImg a:hover,
+.orbisImg a:hover ~ #numberOne,
+.rollrImg a:hover ~ #numberTwo,
+.galitoImg a:hover ~ #numberThree,
+.trettoImg a:hover ~ #numberFour {
+    opacity: 0.75;
 }
 
-.galitoImg a:hover ~ #numberThree {
-    opacity: 1;
+#numberOne,
+#numberTwo,
+#numberThree,
+#numberFour {
+    transition: 1s;
 }
-.trettoImg a:hover ~ #numberFour {
-    opacity: 1;
-}
+
 /* Contact */
 
 .contact {
@@ -223,7 +245,6 @@ html {
 .contact div {
     width: 35vw;
     height: 28vw;
-
     margin-top: 15vh;
     margin-left: 50vw;
 }
@@ -236,7 +257,6 @@ html {
     opacity: 0.3;
     line-height: 180%;
     letter-spacing: 0.22px;
-
     margin-bottom: 50px;
 }
 
@@ -263,19 +283,12 @@ html {
     margin-bottom: 50px;
 }
 
-.orbisImg {
-    background-image: url(./assets/images/section1.jpeg);
+.social a {
+    color: black;
+    text-decoration: none;
 }
 
-.rollrImg {
-    background-image: url(./assets/images/section2.png);
-}
-.galitoImg {
-    background-image: url(./assets/images/section3.jpeg);
-}
-.trettoImg {
-    background-image: url(./assets/images/section4.png);
-}
+/* Animated Heart */
 
 .heart p {
     display: inline-block;
@@ -289,9 +302,4 @@ html {
     animation-timing-function: ease-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-}
-
-.social a {
-    color: black;
-    text-decoration: none;
 }
